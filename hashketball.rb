@@ -1,4 +1,6 @@
 # Write your code below game_hash
+require "pry"
+
 def game_hash
   {
     home: {
@@ -127,3 +129,43 @@ def game_hash
 end
 
 # Write code here
+
+def all_players 
+
+  home_players = game_hash[:home][players]
+  away_players = game_hash[:away][players]
+
+  all_players = away_players + home_players
+  puts all_players
+
+end
+
+def num_points_scored player_name
+  return game_hash[:home][:team_name][:]
+end
+
+
+
+
+# num_points_scored "insight"
+  #that takes in an argument of a player's name and returns the number of points scored for that player.
+
+# shoe_size
+  #that takes in an argument of a player's name and returns the shoe size for that player
+
+# team_colors
+  #that takes in an argument of the team name and returns an Array of that team's colors.
+
+# team_names 
+  #returns an array of team names from the hash
+
+# player_number
+  #that takes in an argument of a team name and returns an Array of the jersey numbers for that team.
+
+
+
+# player_stats
+ # returns a hash of the inputs stats where the input is a player
+  #needs a helper array of an array of both teams players 
+
+map
